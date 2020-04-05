@@ -1,0 +1,23 @@
+#This file contains the proof and theorem to Euclid's Algorithm
+
+Theorem:
+If a = bq +r, then gcd(a,b) = gcd(b,r)
+    gcd(a,b) = gcd(b,r)
+    gcd(b,r) = gcd(r,r1)
+    gcd(r,r1) = gcd(r1,r2)
+            .
+            .
+            .
+    gcd(ri-1, ri) = gcd(ri, 0) = ri
+
+Proof of Theorm:
+Let d be any common divisor of a and b
+d|a, d|b -> d|(a-bq) -> d|r
+
+let e be any common divisor of b and r
+e|b, e|r -> e|bq+r -> e|a
+-> d is a common divisor of a and b iff
+   d is a common divisor of b and r
+
+source:
+https://www.youtube.com/watch?v=H_2_nqKAZ5w&t=307s
